@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  address_matcher:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    restart: always
+    depends_on:
+      - watcher
+
+  watcher:
+    image: docker/compose:1.29.2
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/app
+    command: watch
