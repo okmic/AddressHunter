@@ -1,0 +1,13 @@
+{
+  "name": "AddressHunter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/okmic/AddressHunter.git",
+  "author": "okmic <okmic.g@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fast-levenshtein": "^3.0.0",
+    "winston": "^3.17.0",
+    "xml2js": "^0.6.2"
+  }
+}

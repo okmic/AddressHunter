@@ -1,0 +1,9 @@
+node_modules
+adresses.json
+New_developments.xml
+**/*.log
+**/*.xml
+**/*.csv
+**/*.txt
+**/*.json
+!package.json
